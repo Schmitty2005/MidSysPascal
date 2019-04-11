@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fpdoc-descriptions><package name="SY85Test"><module name="SY85Voice"><element name="TSY85SystemSettings"><short>Type for system settings block of sysex file  SY85</short><descr>This record is a direct translation from the Yamaha SY85 service manual page 91.  Variables are named directly from manual.
+</descr>
+      </element>
+    </module>
+  </package>
+</fpdoc-descriptions>
