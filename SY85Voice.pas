@@ -26,16 +26,16 @@ type
   end;
 
   Tsysexheader = packed record
-    blockStart: byte;  // ALWAYS 0xF0 per Sysex Specifications
-    manufacture: byte; //should be 43H or Decimal 67 for Yamaha!
-    devId: byte;       // 0 to 15
-    modelID: byte;     // always? 0x7A for SY85 ?
+    blockStart: byte;
+    manufacture: byte;
+    devId: byte;
+    modelID: byte;
   end;
 
-  TtempFXblock1 = array [0..71] of byte; {TEMP Placeholder @TODO Remove later}
+  TtempFXblock1 = array [0..71] of byte; {TEMP Placeholder TODO Remove later}
 
   TtestFXHeader = packed record
-    fxMode: byte;    {Length of 223 total 0065VC Data / Total is 239 withtempFXBlock }
+    fxMode: byte;    {Length of 223 total 0065VC Data  Total is 239 withtempFXBlock }
     fxOneType: byte;  {19 bytes missing from here?}
     fxTwoType: byte;   {Correct}
     fxContOneParam: word;
@@ -76,7 +76,7 @@ type
     fxLFOSpeed: byte;
     fxLFODelayTime: byte;
     reserved: byte;
-    placeholder: word; {Horrible temp fix @ TODO remove}
+    placeholder: word; {Horrible temp fix  TODO remove}
   end;
 
   TtempBlockAfterName = array [0..118] of byte;
@@ -86,10 +86,10 @@ type
   TSY85Header = packed record
     sysExHeader: Tsysexheader;
     blockSize: TBlockLength;
-    blockType: array [0..9] of AnsiChar;  //CheckSum of data starts here also
+    blockType: array [0..9] of AnsiChar;
   end;
 
-  //PSY85Header = @TSY85Header;
+
 
   {Type for 0065VC - Voice }
   TSY85VoiceBlock = packed record
@@ -99,7 +99,7 @@ type
     MemSlot: byte;
     Reserved1: byte;
     testfx: TtestFXHeader;
-    {tempFX: TtempFXblock1;}//temp placeholder
+    {tempFX: TtempFXblock1;}
     reserved2: array [0..2] of byte;
     voiceName: TVoiceName;
     reserved3: byte;
@@ -164,7 +164,7 @@ type
   end;
 
   {Type for  Rhythm  placed at End of System Settings Block}
-  {@TODO Verify}
+  {TODO Verify}
   TY85RythmSettings = packed record
     rhthmMode: byte;
     rhythmRecType: byte;
@@ -185,6 +185,8 @@ var
  Function readSysEx(fnam: String): TBytesStream;
  function parseVoice (data : TBytesStream) : TList;
  function CalcBlockSize (sy85head : TSY85Header) : Word;
+ function parseSysExBlocks (sysexFile : TBytesStream) : Tlist;
+
 
 implementation
 
@@ -192,7 +194,7 @@ function calcChecksum(block: TSY85VoiceBlock): byte;
 var
   convert: word;
 begin
-  {@TODO complete}
+  {TODO complete}
 end;
 
 function calcDataLength(block: TSY85VoiceBlock): word;
@@ -213,7 +215,7 @@ Function readSysEx(fnam: String): TBytesStream;
 Var
   fstream: TFileStream;
   n: longint;
-  data : TBytesStream;//Array Of  Byte;
+  data : TBytesStream;
 
 Begin
   fstream := TFileStream.Create(fnam, fmOpenRead Or fmShareDenyWrite);
@@ -221,7 +223,7 @@ Begin
    n := fstream.Size;
    data := TBytesStream.Create;
    data.SetSize(n);
-   data.CopyFrom(fstream, fstream.Size);   //Found method to get from file :(
+   data.CopyFrom(fstream, fstream.Size);   {Found method to get from file}
   Finally
     fstream.Free;
 End;
@@ -242,7 +244,7 @@ begin
 end;
 
 function parseVoice (data : TBytesStream) : TList;
-  {@TODO NOT FINISHED! NOT EVEN CLOSE}
+  {TODO NOT FINISHED! NOT EVEN CLOSE}
 var
     counter : Integer;
     position : Integer;
@@ -277,6 +279,38 @@ voiceLIst.add(VoicePointer);
 {END of test code;}
 end;
 
+function parseSysExBlocks (sysexFile : TBytesStream) : Tlist;
+const
+  START_CHAR = $F0;
+var
+  counter : Integer;
+  blockList : Tlist;
+  verify : Byte;
+  pBytePointer : ^Byte;
+Begin
+  counter := 0;
+  pBytePointer := sysexFile.Memory;
+      blockList := Tlist.Create;
+  while counter <= sysexFile.Size do
+Begin
+    if (pBytePointer^) = START_CHAR then
+    begin
+    blocklist.add(pBytePointer);
+    Inc(Counter);
+    Inc(pBytePointer)
+    end
 
-
+    else
+    begin
+        Inc(Counter);
+        Inc(pBytePointer);
+    end;
+end;
+  result := blockList;
+end;
 end.
+
+
+
+
+
