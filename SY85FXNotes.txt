@@ -1,0 +1,81 @@
+SY85 Effects Notes :
+
+Phaser With (Rev->Chorus)::
+Parameter   |   Min  |  Max     |
+MOD FREQ    |   0.1  |  40.00   |
+MOD Depth%  |   0    |  100     |
+Mod Dly (ms)|   0.1  |  5.0     |
+HighGain(Db)|   -12  |  +12     |
+
+Chorus With (Rev->Chorus):
+Parameter   |   Min  |  Max     |
+MOD FREQ    |   0.1  |  40.00   |
+PM Depth%   |   0    |  100     |
+AM Depth%   |   0    |  100     |
+HighGain(Db)|   -12  |  +12     |
+
+Sym ? 
+Parameter   |   Min  |  Max     |
+MOD FREQ    |   0.1  |  40.00   |
+MOD Depth%  |   0    |  100     |
+Init Dly(ms)|   0    |  300     |
+HighGain(Db)|   -12  |  +12     |
+
+Aural Exciter
+Parameter   |   Min     |  Max      |
+HPF         |   500(Hz) |   16(Khz) |   Param1
+Enhance%    |   0       |   100     |   Param2
+Exc Level   |   0       |   100     |   Param3
+Init Dly(ms)|   0       |   99.9    |   
+
+Rev. Hall 1
+Parameter   |   Min     |  Max      |
+RevTime(Sec)|   0.3     |  30       |
+High        |   0.1     |   1.5     |
+Diffusion   |   0       |   10      |
+Density     |   0       |   4       |
+ER/RevBalanc|   0       |   100     |
+Low Gain(Db)|   -12     |  +12      |
+HighGain(Db)|   -12     |  +12      |
+LPF         |   1       |   Thru    |
+
+Rev. Hall 2 & Rev Room 1/2/3 Rev Stage 1/2 Plate
+Parameter   |   Min     |  Max      |
+RevTime(Sec)|   0.3     |  30       |
+High        |   0.1     |   1.5     |
+Diffusion   |   0       |   10      |
+Init Dly(ms)|   0       |   150     |
+RevDelay(ms)|   0       |   100     |
+Density     |   0       |   4       |
+ER/RevBalanc|   0       |   100     |
+LPF         |   1       |   Thru    |
+
+Rev WhRoom
+Parameter   |   Min     |  Max      |
+RevTime(Sec)|   0.3     |  30       |
+High        |   0.1     |   1.5     |
+Diffusion   |   0       |   10      |
+Width       |   0.5     |   23.6    |
+Height      |   0.5     |   23.6    |
+Depth       |   0.5     |   23.6    |
+Wall Vary   |   0       |   30      |
+LPF         |   1       |   Thru    |
+
+Rotary Speaker
+Parameter   |   Min     |  Max      |
+Mid Speed   |   0.1     |   40      |
+Depth       |   0       |   100     |
+Trans Time  |   2ms     |   22sec   |
+Spd Diff(hz)|   0.05    |   5.80    |
+L/M/H Swch  |   Low     |   High    |
+Low Gain(Db)|   -12     |  +12      |
+HighGain(Db)|   -12     |  +12      |
+
+Ring Mod
+Parameter   |   Min     |  Max      |
+
+
+
+
+
+

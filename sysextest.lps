@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units Count="5">
+      <Unit0>
+        <Filename Value="sysextest.pas"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos Y="40"/>
+        <UsageCount Value="45"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="SY85Data.pas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="31"/>
+        <CursorPos Y="13"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="SY85PVEdit.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="47"/>
+        <CursorPos X="17" Y="69"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="Sy85Lib.pas"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="294"/>
+        <CursorPos X="5" Y="311"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="C:\lazarus2rc2\lcl\dialogs.pp"/>
+        <UnitName Value="Dialogs"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="250"/>
+        <CursorPos X="25" Y="255"/>
+        <UsageCount Value="13"/>
+      </Unit4>
+    </Units>
+    <JumpHistory Count="29" HistoryIndex="28">
+      <Position1>
+        <Filename Value="SY85PVEdit.pas"/>
+        <Caret Line="54" Column="25" TopLine="43"/>
+      </Position1>
+      <Position2>
+        <Filename Value="SY85PVEdit.pas"/>
+        <Caret Line="55" TopLine="43"/>
+      </Position2>
+      <Position3>
+        <Filename Value="SY85PVEdit.pas"/>
+        <Caret Line="53" Column="25" TopLine="43"/>
+      </Position3>
+      <Position4>
+        <Filename Value="sysextest.pas"/>
+        <Caret Line="34" Column="56" TopLine="19"/>
+      </Position4>
+      <Position5>
+        <Filename Value="SY85Data.pas"/>
+        <Caret Line="13" TopLine="8"/>
+      </Position5>
+      <Position6>
+        <Filename Value="Sy85Lib.pas"/>
+        <Caret Line="302" TopLine="295"/>
+      </Position6>
+      <Position7>
+        <Filename Value="SY85PVEdit.pas"/>
+        <Caret Line="55" TopLine="43"/>
+      </Position7>
+      <Position8>
+        <Filename Value="SY85PVEdit.pas"/>
+        <Caret Line="56" TopLine="43"/>
+      </Position8>
+      <Position9>
+        <Filename Value="sysextest.pas"/>
+        <Caret Line="30" TopLine="19"/>
+      </Position9>
+      <Position10>
+        <Filename Value="sysextest.pas"/>
+        <Caret Line="32" TopLine="19"/>
+      </Position10>
+      <Position11>
+        <Filename Value="sysextest.pas"/>
+        <Caret Line="33" TopLine="19"/>
+      </Position11>
+      <Position12>
+        <Filename Value="sysextest.pas"/>
+        <Caret Line="34" TopLine="19"/>
+      </Position12>
+      <Position13>
+        <Filename Value="SY85PVEdit.pas"/>
+        <Caret Line="55" TopLine="43"/>
+      </Position13>
+      <Position14>
+        <Filename Value="SY85PVEdit.pas"/>
+        <Caret Line="56" TopLine="43"/>
+      </Position14>
+      <Position15>
+        <Filename Value="sysextest.pas"/>
+        <Caret Line="34" TopLine="19"/>
+      </Position15>
+      <Position16>
+        <Filename Value="Sy85Lib.pas"/>
+        <Caret Line="320" Column="24" TopLine="310"/>
+      </Position16>
+      <Position17>
+        <Filename Value="SY85PVEdit.pas"/>
+        <Caret Line="55" TopLine="33"/>
+      </Position17>
+      <Position18>
+        <Filename Value="Sy85Lib.pas"/>
+        <Caret Line="314" Column="50" TopLine="307"/>
+      </Position18>
+      <Position19>
+        <Filename Value="Sy85Lib.pas"/>
+        <Caret Line="316" Column="12" TopLine="308"/>
+      </Position19>
+      <Position20>
+        <Filename Value="Sy85Lib.pas"/>
+        <Caret Line="319" Column="50" TopLine="311"/>
+      </Position20>
+      <Position21>
+        <Filename Value="sysextest.pas"/>
+        <Caret Line="36" Column="58" TopLine="22"/>
+      </Position21>
+      <Position22>
+        <Filename Value="SY85PVEdit.pas"/>
+        <Caret Line="55" TopLine="47"/>
+      </Position22>
+      <Position23>
+        <Filename Value="Sy85Lib.pas"/>
+        <Caret Line="28" TopLine="13"/>
+      </Position23>
+      <Position24>
+        <Filename Value="sysextest.pas"/>
+        <Caret Line="35" Column="35" TopLine="25"/>
+      </Position24>
+      <Position25>
+        <Filename Value="sysextest.pas"/>
+        <Caret Line="40" Column="4" TopLine="25"/>
+      </Position25>
+      <Position26>
+        <Filename Value="SY85PVEdit.pas"/>
+        <Caret Line="73" Column="57" TopLine="61"/>
+      </Position26>
+      <Position27>
+        <Filename Value="sysextest.pas"/>
+        <Caret Line="38" Column="3" TopLine="26"/>
+      </Position27>
+      <Position28>
+        <Filename Value="Sy85Lib.pas"/>
+        <Caret Line="302" Column="41" TopLine="297"/>
+      </Position28>
+      <Position29>
+        <Filename Value="sysextest.pas"/>
+        <Caret Line="40" TopLine="27"/>
+      </Position29>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints>
+      <Item>
+        <Kind Value="bpkData"/>
+        <WatchScope Value="wpsGlobal"/>
+        <WatchKind Value="wpkWrite"/>
+        <BreakHitCount Value="35"/>
+        <InitialEnabled Value="False"/>
+      </Item>
+    </BreakPoints>
+    <Watches>
+      <Item>
+        <Expression Value="name"/>
+        <Enabled Value="False"/>
+      </Item>
+      <Item>
+        <Expression Value="count"/>
+      </Item>
+      <Item>
+        <Expression Value="result"/>
+      </Item>
+      <Item RepeatCount="120">
+        <Expression Value="data"/>
+      </Item>
+      <Item>
+        <Expression Value="FormatName"/>
+      </Item>
+    </Watches>
+  </Debugging>
+</CONFIG>

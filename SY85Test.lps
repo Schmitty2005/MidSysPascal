@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="11"/>
+    <BuildModes Active="Default"/>
+    <Units Count="3">
+      <Unit0>
+        <Filename Value="SY85Test.pas"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="22"/>
+        <CursorPos Y="48"/>
+        <UsageCount Value="49"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="SY85Voice.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="291"/>
+        <CursorPos Y="308"/>
+        <UsageCount Value="24"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="sy85test.xml"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="9"/>
+        <DefaultSyntaxHighlighter Value="XML"/>
+      </Unit2>
+    </Units>
+    <JumpHistory HistoryIndex="-1"/>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints Count="1">
+      <Item1>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="SY85Test.pas"/>
+        <Line Value="48"/>
+      </Item1>
+    </BreakPoints>
+    <Watches Count="9">
+      <Item1>
+        <Expression Value="testString"/>
+      </Item1>
+      <Item2>
+        <Expression Value="poop"/>
+      </Item2>
+      <Item3>
+        <Expression Value="Counter"/>
+      </Item3>
+      <Item4>
+        <Expression Value="Unit2"/>
+      </Item4>
+      <Item5>
+        <Expression Value="tester"/>
+      </Item5>
+      <Item6>
+        <Expression Value="Unit2.tester"/>
+      </Item6>
+      <Item7>
+        <Expression Value="data"/>
+      </Item7>
+      <Item8>
+        <Expression Value="blocklist"/>
+      </Item8>
+      <Item9>
+        <Expression Value="blocks"/>
+      </Item9>
+    </Watches>
+  </Debugging>
+</CONFIG>
