@@ -1,7 +1,7 @@
 {$mode Delphi}
 Program sysextest;
 
-Uses Sy85Lib, SysexLib, SY85PVEdit, SY85Data, SysUtils;
+Uses Sy85Lib, SysexLib, SY85PVEdit, SY85Data, SysUtils, midnamer;
 
 Var 
   data : TDataBlock ;

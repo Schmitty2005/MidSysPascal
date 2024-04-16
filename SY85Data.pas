@@ -17,11 +17,11 @@ Implementation
 Function SY85CreateDataArray (data : TDataBlock) : TBlockArray;
 
 Var 
-  blockCount : Integer = 0;
+  blockCount : Integer = 0; //switched to 1 from 0  for exception testing 4-15-2024
   counter : Integer = 0;
   sliceStart : Integer = 0;
   sliceEnd : Integer = 0;
-  currentPos : Integer = 1;
+  currentPos : Integer = 1; //switchin to 0 causes major problems.
   sliceSize : Integer = 0;
   patchNameConv : array Of Char absolute data;
   patchType : array [0..6] Of Char;
